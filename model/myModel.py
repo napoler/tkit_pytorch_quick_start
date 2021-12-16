@@ -3,7 +3,7 @@
 作者：　terrychan
 Blog: https://terrychan.org
 # 说明：
-
+一个简单的模型示例。
 """
 import os
 """

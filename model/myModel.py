@@ -42,14 +42,14 @@ class myModel(pl.LightningModule):
                  nhead=8,
                  d_model=128,
                  pretrained="uer/chinese_roberta_L-2_H-128",
-                 T_mult=1.1,
+                 T_mult=2,
                  T_0=500,
                  **kwargs):
-        super(self).__init__()
+        super().__init__()
         # save save_hyperparameters
         self.save_hyperparameters()
         # self.tokenizer = BertTokenizer.from_pretrained(pretrained)
-        self.emb = nn.Embedding(21128, d_model, padding_idx=self.tokenizer.pad_token_id)
+        self.emb = nn.Embedding(21128, d_model, padding_idx=0)
         self.model = nn.Transformer(d_model=self.hparams.d_model,
                                     nhead=self.hparams.nhead,
                                     num_encoder_layers=self.hparams.num_encoder_layers,

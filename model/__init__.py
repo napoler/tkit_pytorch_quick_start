@@ -6,6 +6,6 @@ Blog: https://terrychan.org
 
 """
 import os
-from myModel import *
+from .myModel import *
 if __name__ == '__main__':
     pass

@@ -7,7 +7,7 @@ Blog: https://terrychan.org
 """
 import os
 """
-MLM训练
+MLM demo训练
 
 """
 import pytorch_lightning as pl
